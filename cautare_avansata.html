@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Căutare Avansată</title>
+  <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://bit.ly/1X4CIYW">TroW</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html"> Pagina Principală </a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Căutare <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="cautare_simpla.html"> Căutare Simplă </a></li>
+          <li><a href="cautare_avansata.html"> Căutare Avansată </a></li>
+        </ul>
+      </li>
+      <li><a href="despre.html"> Despre </a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="inregistrare.html"><span class="glyphicon glyphicon-user"></span> Înregistrați-vă </a></li>
+      <li><a href="autentificare.html"><span class="glyphicon glyphicon-log-in"></span> Autentificați-vă </a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <h2 class="text-center">Vă rugăm să introduceți stațiile de plecare și de sosire, precum și escala.</h2>
+  <form role="form" class="text-center" action="cautare_avansata.php" method="post">
+    </br>
+    <div class="form-group">
+      <label for="statie_plecare">Stația de plecare:</label>
+      <input type="text" class="form-control" name="statie_plecare" placeholder="Introduceți stația de plecare:">
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="statie_plecare">Escala:</label>
+      <input type="text" class="form-control" name="escala" placeholder="Introduceți stația intermediară:">
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="statie_sosire">Stația de sosire:</label>
+      <input type="text" class="form-control" name="statie_sosire" placeholder="Introduceți stația de sosire:">
+    </div>
+    </br>
+    <button type="submit" class="btn btn-primary btn-block">Trimite</button>
+    </br>
+    <h3 class="text-center"> Dacă doriți, puteți efectua o <a href="cautare_simpla.html"> căutare simplă</a>.</h3>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Înregistrare</title>
+  <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://bit.ly/1X4CIYW">TroW</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html"> Pagina Principală </a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Căutare <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="cautare_simpla.html"> Căutare Simplă </a></li>
+          <li><a href="cautare_avansata.html"> Căutare Avansată </a></li>
+        </ul>
+      </li>
+      <li><a href="despre.html"> Despre </a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="inregistrare.html"><span class="glyphicon glyphicon-user"></span> Înregistrați-vă </a></li>
+      <li><a href="autentificare.html"><span class="glyphicon glyphicon-log-in"></span> Autentificați-vă </a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <form role="form" class="text-center" action="inregistrare.php" method="post">
+  <h2 class="text-center"> Bine ați venit la pagina de înregistrare. Vă rugăm să completați următoarele câmpuri cu valorile dorite. </h2>
+    </br>
+    <div class="form-group">
+      <label for="Nume">Nume de utilizator:</label>
+      <input type="text" class="form-control" name="nume_utilizator" placeholder="Introduceți numele de utilizator dorit:">
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="Mail">Adresa de mail:</label>
+      <input type="email" class="form-control" name="email" placeholder="Introduceți email-ul dumneavoastră:">
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="Parola">Parola:</label>
+      <input type="password" class="form-control" name="parola" placeholder="Introduceți parola dorită:">
+    </div>
+    </br>
+    <div class="form-group">
+      <label for="Rep_parola">Repetați parola:</label>
+      <input type="password" class="form-control" name="parola_repetata" placeholder="Introduceți din nou parola:">
+    </div>
+    </br>
+    <button type="submit" class="btn btn-primary btn-block">Trimite</button>
+  </form>
+</div>
+
+</body>
+</html>
